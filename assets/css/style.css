@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #e78100;
+    --primary-text-color: #4F4F4F;
+    --secondary-text-color: #808080;
+    --secondary-color: #FFFFFF;
+    --bg-color: #f0f5ca;
+    --tertiary-color: #CCC;
+    --btn-color: #578c32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--tertiary-color);
+}
+
+header {
+    height: 200px;
+    background-image: url('../img/bg4.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    top: -50px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.37);
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+.container h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+
+.imc-container {
+    width: 150px;
+    margin: auto;
+}
+
+.imc-container label, input {
+    display: block;
+}
+
+.imc-container label {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+    color: var(--secondary-text-color);
+}
+
+.imc-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid var(--tertiary-color);
+}
+
+.imc-container input[type="number"]::placeholder {
+    font-family: 'Poppins';
+    color: var(--tertiary-color);
+}
+
+.imc-container input[type="button"] {
+    font-size: 1rem;
+    margin: auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: 1px solid var(--btn-color);
+    color: var(--secondary-color);
+    background-color: var(--btn-color);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.imc-container input[type="button"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--btn-color);
+}
+
+.imc-checkbox {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.imc-checkbox h4 {
+    color: var(--secondary-text-color);
+}
+
+.imc-fields {
+    display: flex;
+}
+
+.imc-fields label {
+    padding-right: 3px;
+    font-size: 1rem;
+}
+
+.imc-fields input[type="checkbox"]:nth-child(2) {
+    margin-right: 15px;
+}
+
+.imc-res {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 8px;
+    border: 1px solid var(--tertiary-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.imc-res h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    top: -18px;
+    padding: 0 1rem;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-color);
+    position: absolute;
+}
+
+.imc-res-data {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.imc-res-data h3 {
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.imc-res-data p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary-text-color);
+}
+
+.imc-res-data img {
+    display: flex;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}

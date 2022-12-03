@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/icon_imc.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <header>        
+    </header>
+
+    <section>
+        <div class="container">
+            <h1>Calculadora IMC</h1>
+
+            <div class="imc-container">
+                <label for="peso">Peso:</label>
+                <input type="number" name="peso" id="peso" placeholder="Ex.: 77.8">
+
+                <label for="alt">Altura:</label>
+                <input type="number" name="alt" id="alt" placeholder="Ex.: 1.83">
+
+                <div class="imc-checkbox">
+                    <h4>Sexo:</h4>
+                    <div class="imc-fields">
+                        <label for="fem">F</label>
+                        <input type="checkbox" name="fem" id="fem">
+                        <label for="mas">M</label>
+                        <input type="checkbox" name="mas" id="mas">
+                    </div>
+                </div>
+
+                <input type="button" value="Calcular" id="btn-calcular">
+            </div>
+
+            <div class="imc-res">
+                <h2>Resultado</h2>
+                
+                <div class="imc-res-data">
+                    <h3 id="imc-res-title"></h3>
+                    <p id="imc-res-par"></p>
+                    <img src="" id="imc-res-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright <i class="fa-light fa-copyright"></i> 2022 - Zen Brito</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
